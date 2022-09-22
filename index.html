@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+
+<html>
+	<header>
+			<!--<link rel="stylesheet" href="./style.css">-->
+	</header>		
+<body>
+     
+				<div class="plan_data" id="plan_data" hidden="">""</div>
+
+                <div class="col-md-6">
+ <form>  
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title"> Information</h4>
+                        </div>
+
+								<div class="card-body">
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 col-form-label">
+                                         
+										<label for="">Mobile Number <b class="text-danger">*</b></label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="number" class="form-control" name="phone" id="policyholder-phone" onkeydown="return event.keyCode !== 69" onkeypress="if(this.value.length==10) return false;" placeholder="Enter Mobile Number">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 col-form-label">
+                                            <label for="">Name <b class="text-danger">*</b></label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="name" placeholder="Enter Name" id="policyholder-name">
+											
+										
+										</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 col-form-label">
+                                            <label for="">CNIC<b class="text-danger">*</b></label>
+                                                
+                                                                                         
+                                        </div>
+                                        <div class="col-sm-9">
+
+                                            <input type="number" class="form-control" name="cnic" id="policyholder-cnic" placeholder="Enter CNIC Without Dashes" onkeypress="if(this.value.length==13) return false;">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 col-form-label">
+                                            <label for="">Date of birth </label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="date" class="form-control" name="dob" id="ph_dateofbirth" max="2022-09-12">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 col-form-label">
+                                            <label for="">Age </label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="number" class="form-control" name="age" placeholder="Enter Age" id="ph_age">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 col-form-label">
+                                            <label for="">Gender </label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                </div>
+                                                <select class="custom-select" id="gender" name="gender">
+                                                    <option disabled="" selected="">Select The Gender</option>
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                    <option value="not_prefer">Not Prefer</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 col-form-label">
+                                            <label for="">Language </label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                </div>
+                                                <select class="custom-select" id="language" name="language">
+                                                    <option disabled="" selected="">Select The Language</option>
+                                                                                                                <option value="English">English</option>
+                                                                                                                <option value="Urdu">Urdu</option>
+                                                                                                        </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 col-form-label">
+                                            <label for="">Pre-Fix </label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                </div>
+                                                <select class="custom-select" id="address_prefix" name="address_prefix">
+                                                    <option selected="" value="House">House</option>
+                                                    <option value="Flat">Flat</option>
+                                                    <option value="Office">Office</option>
+                                                    <option value="Shop">Shop</option>
+                                                    <option value="Self Pick">Self Pick</option>
+                                                    <option value="">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 col-form-label">
+                                            <label for="">Address</label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <textarea name="address" class="form-control" rows="4" placeholder="Enter Address" id="policyholder-address"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 col-form-label">
+                                            <label>City </label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <div role="group" class="form-row form-group" data-v-aa799a9e="">
+                                                <select class="custom-select" name="city" id="policyholder-city">
+                                                    
+                                                    <option disabled="" selected="">Select City</option>
+                                                                                                            <option value="68 Mori">
+                                                            68 Mori</option>
+                                                                                                            <option value="Adilpur">
+                                                            Adilpur</option>
+                                                                                                            <option value="Ahmadpur Sial">
+                                                            Ahmadpur Sial</option>
+                                                                                                            <option value="Allah Abad">
+                                                            Allah Abad</option>
+                                                                                                            <option value="Arija ">
+                                                            Arija </option>
+                                                                                                            <option value="Awan Sharif">
+                                                            Awan Sharif</option>
+                                                                                                            <option value="Abbas Pur">
+                                                            Abbas Pur</option>
+                                                                                                            <option value="Abdul Hakeem">
+                                                            Abdul Hakeem</option>
+                                                                                                            <option value="Abottabad">
+                                                            Abottabad</option>
+                                                                                                            <option value="Agra">
+                                                            Agra</option>
+                                                                                                            <option value="Ahmedpur East">
+                                                            Ahmedpur East</option>
+                                                                                                            <option value="Ahmedpur Lamma">
+                                                            Ahmedpur Lamma</option>
+                                                                                                            <option value="Ajnianwala">
+                                                            Ajnianwala</option>
+                                                                                                            <option value="Akora Khattak">
+                                                            Akora Khattak</option>
+                                                                                                            <option value="Akri Choudgi">
+                                                            Akri Choudgi</option>
+                                                                                                            <option value="Alhajri">
+                                                            Alhajri</option>
+                                                                                                            <option value="Alipur">
+                                                            Alipur</option>
+                                                                                                            <option value="Alipur Chatha">
+                                                            Alipur Chatha</option>
+                                                                                                            <option value="Aloch">
+                                                            Aloch</option>
+                                                                                                            <option value="Alpuri">
+                                                            Alpuri</option>
+                                                                                                            <option value="Aman Garh">
+                                                            Aman Garh</option>
+                                                                                                            <option value="Aman Kot">
+                                                            Aman Kot</option>
+                                                                                                            <option value="Arifwala">
+                                                            Arifwala</option>
+                                                                                                            <option value="Athara Hazari">
+                                                            Athara Hazari</option>
+                                                                                                            <option value="Attershshaan">
+                                                            Attershshaan</option>
+                                                                                                            <option value="Attock">
+                                                            Attock</option>
+                                                                                                            <option value="Badah ">
+                                                            Badah </option>
+                                                                                                            <option value="Bakrani">
+                                                            Bakrani</option>
+                                                                                                            <option value="Bakshapur ">
+                                                            Bakshapur </option>
+                                                                                                            <option value="Balkasar">
+                                                            Balkasar</option>
+                                                                                                            <option value="Barnala">
+                                                            Barnala</option>
+                                                                                                            <option value="Bharwana">
+                                                            Bharwana</option>
+                                                                                                            <option value="Bhera">
+                                                            Bhera</option>
+                                                                                                            <option value="Bhitshah">
+                                                            Bhitshah</option>
+                                                                                                            <option value="Bhone">
+                                                            Bhone</option>
+                                                                                                            <option value="Bhurban">
+                                                            Bhurban</option>
+                                                                                                            <option value="Bikhari Kalan">
+                                                            Bikhari Kalan</option>
+                                                                                                            <option value="Buchal Kalan">
+                                                            Buchal Kalan</option>
+                                                                                                            <option value="Bulri Shah Kareem">
+                                                            Bulri Shah Kareem</option>
+                                                                                                            <option value="Badin">
+                                                            Badin</option>
+                                                                                                            <option value="Bafa">
+                                                            Bafa</option>
+                                                                                                            <option value="Bagh">
+                                                            Bagh</option>
+                                                                                                            <option value="Baghbana">
+                                                            Baghbana</option>
+                                                                                                            <option value="Bahawal Nagar">
+                                                            Bahawal Nagar</option>
+                                                                                                            <option value="Bahawalpur">
+                                                            Bahawalpur</option>
+                                                                                                            <option value="Bahrain">
+                                                            Bahrain</option>
+                                                                                                            <option value="Bahuman">
+                                                            Bahuman</option>
+                                                                                                            <option value="Bajur Agency">
+                                                            Bajur Agency</option>
+                                                                                                            <option value="Balakot">
+                                                            Balakot</option>
+                                                                                                            <option value="Balina Khattan">
+                                                            Balina Khattan</option>
+                                                                                                            <option value="Balogram">
+                                                            Balogram</option>
+                                                                                                            <option value="Bandhi">
+                                                            Bandhi</option>
+                                                                                                            <option value="Bannuu">
+                                                            Bannuu</option>
+                                                                                                            <option value="Bari Kot">
+                                                            Bari Kot</option>
+                                                                                                            <option value="Basirpur">
+                                                            Basirpur</option>
+                                                                                                            <option value="Basti Shorekot">
+                                                            Basti Shorekot</option>
+                                                                                                            <option value="Batkhela">
+                                                            Batkhela</option>
+                                                                                                            <option value="Batrasi">
+                                                            Batrasi</option>
+                                                                                                            <option value="Battagram">
+                                                            Battagram</option>
+                                                                                                            <option value="Battal">
+                                                            Battal</option>
+                                                                                                            <option value="Beerkund Khaki">
+                                                            Beerkund Khaki</option>
+                                                                                                            <option value="Behal">
+                                                            Behal</option>
+                                                                                                            <option value="Bhagatwala">
+                                                            Bhagatwala</option>
+                                                                                                            <option value="Bhai Pheru">
+                                                            Bhai Pheru</option>
+                                                                                                            <option value="Bhakkar">
+                                                            Bhakkar</option>
+                                                                                                            <option value="Bhalwal">
+                                                            Bhalwal</option>
+                                                                                                            <option value="Bhan Saeedabad">
+                                                            Bhan Saeedabad</option>
+                                                                                                            <option value="Bheria City (Nawabshah)">
+                                                            Bheria City (Nawabshah)</option>
+                                                                                                            <option value="Bhikhi">
+                                                            Bhikhi</option>
+                                                                                                            <option value="Bhimber">
+                                                            Bhimber</option>
+                                                                                                            <option value="Bilot Sharif">
+                                                            Bilot Sharif</option>
+                                                                                                            <option value="Bozdar Wada">
+                                                            Bozdar Wada</option>
+                                                                                                            <option value="Buchari">
+                                                            Buchari</option>
+                                                                                                            <option value="Buner">
+                                                            Buner</option>
+                                                                                                            <option value="Burewala">
+                                                            Burewala</option>
+                                                                                                            <option value="Burj Dara">
+                                                            Burj Dara</option>
+                                                                                                            <option value="Chaksawari">
+                                                            Chaksawari</option>
+                                                                                                            <option value="Changa Manga">
+                                                            Changa Manga</option>
+                                                                                                            <option value="Chitral">
+                                                            Chitral</option>
+                                                                                                            <option value="Chowk Bahadur Pur">
+                                                            Chowk Bahadur Pur</option>
+                                                                                                            <option value="Chowk Qureshi">
+                                                            Chowk Qureshi</option>
+                                                                                                            <option value="Chowk Server Shaheed">
+                                                            Chowk Server Shaheed</option>
+                                                                                                            <option value="Chunia">
+                                                            Chunia</option>
+                                                                                                            <option value="Chachoro">
+                                                            Chachoro</option>
+                                                                                                            <option value="Chak Dera">
+                                                            Chak Dera</option>
+                                                                                                            <option value="Chak Ghazi">
+                                                            Chak Ghazi</option>
+                                                                                                            <option value="Chak Jhumra">
+                                                            Chak Jhumra</option>
+                                                                                                            <option value="Chak Kharal">
+                                                            Chak Kharal</option>
+                                                                                                            <option value="Chakwal">
+                                                            Chakwal</option>
+                                                                                                            <option value="Chaman">
+                                                            Chaman</option>
+                                                                                                            <option value="Char Bagh">
+                                                            Char Bagh</option>
+                                                                                                            <option value="Charcheck">
+                                                            Charcheck</option>
+                                                                                                            <option value="Charsadda">
+                                                            Charsadda</option>
+                                                                                                            <option value="Chashma">
+                                                            Chashma</option>
+                                                                                                            <option value="Chattar Plain">
+                                                            Chattar Plain</option>
+                                                                                                            <option value="Chatter Kalas">
+                                                            Chatter Kalas</option>
+                                                                                                            <option value="Chaubara">
+                                                            Chaubara</option>
+                                                                                                            <option value="Chaungh">
+                                                            Chaungh</option>
+                                                                                                            <option value="Chauwki">
+                                                            Chauwki</option>
+                                                                                                            <option value="Chawinda">
+                                                            Chawinda</option>
+                                                                                                            <option value="Chella">
+                                                            Chella</option>
+                                                                                                            <option value="Chhori">
+                                                            Chhori</option>
+                                                                                                            <option value="Chianri">
+                                                            Chianri</option>
+                                                                                                            <option value="Chichawatni">
+                                                            Chichawatni</option>
+                                                                                                            <option value="Chiniot">
+                                                            Chiniot</option>
+                                                                                                            <option value="Chirya Wala">
+                                                            Chirya Wala</option>
+                                                                                                            <option value="Chishtian">
+                                                            Chishtian</option>
+                                                                                                            <option value="Chita Bata">
+                                                            Chita Bata</option>
+                                                                                                            <option value="Chohr Cant">
+                                                            Chohr Cant</option>
+                                                                                                            <option value="Choti Zareen">
+                                                            Choti Zareen</option>
+                                                                                                            <option value="Chowk Azam">
+                                                            Chowk Azam</option>
+                                                                                                            <option value="Chowk Munda">
+                                                            Chowk Munda</option>
+                                                                                                            <option value="Chua Saidain Shah">
+                                                            Chua Saidain Shah</option>
+                                                                                                            <option value="Chundiko">
+                                                            Chundiko</option>
+                                                                                                            <option value="College Dorha">
+                                                            College Dorha</option>
+                                                                                                            <option value="Daira Deen Panah">
+                                                            Daira Deen Panah</option>
+                                                                                                            <option value="Daira Deen Panah(SSP)">
+                                                            Daira Deen Panah(SSP)</option>
+                                                                                                            <option value="Dandot">
+                                                            Dandot</option>
+                                                                                                            <option value="Darbelo">
+                                                            Darbelo</option>
+                                                                                                            <option value="Daro">
+                                                            Daro</option>
+                                                                                                            <option value="Darya Khan Mari">
+                                                            Darya Khan Mari</option>
+                                                                                                            <option value="Daur">
+                                                            Daur</option>
+                                                                                                            <option value="Dera Nawab">
+                                                            Dera Nawab</option>
+                                                                                                            <option value="Dhab Kalan">
+                                                            Dhab Kalan</option>
+                                                                                                            <option value="Dhudial">
+                                                            Dhudial</option>
+                                                                                                            <option value="Dijkot">
+                                                            Dijkot</option>
+                                                                                                            <option value="Diplo">
+                                                            Diplo</option>
+                                                                                                            <option value="Dokri">
+                                                            Dokri</option>
+                                                                                                            <option value="Dadu">
+                                                            Dadu</option>
+                                                                                                            <option value="Dadyal Ak">
+                                                            Dadyal Ak</option>
+                                                                                                            <option value="Daharki">
+                                                            Daharki</option>
+                                                                                                            <option value="Dahranwala">
+                                                            Dahranwala</option>
+                                                                                                            <option value="Dajal">
+                                                            Dajal</option>
+                                                                                                            <option value="Daraban">
+                                                            Daraban</option>
+                                                                                                            <option value="Dargai">
+                                                            Dargai</option>
+                                                                                                            <option value="Darra">
+                                                            Darra</option>
+                                                                                                            <option value="Darya Khan">
+                                                            Darya Khan</option>
+                                                                                                            <option value="Daska">
+                                                            Daska</option>
+                                                                                                            <option value="Daud Khel">
+                                                            Daud Khel</option>
+                                                                                                            <option value="Daulatpur">
+                                                            Daulatpur</option>
+                                                                                                            <option value="Dawood Khel">
+                                                            Dawood Khel</option>
+                                                                                                            <option value="Depalpur">
+                                                            Depalpur</option>
+                                                                                                            <option value="Dera Allah Yar">
+                                                            Dera Allah Yar</option>
+                                                                                                            <option value="Dera Ghazi Khan">
+                                                            Dera Ghazi Khan</option>
+                                                                                                            <option value="Dera Ismail Khan">
+                                                            Dera Ismail Khan</option>
+                                                                                                            <option value="Dera Murad Jamali">
+                                                            Dera Murad Jamali</option>
+                                                                                                            <option value="Dhabeji">
+                                                            Dhabeji</option>
+                                                                                                            <option value="Dheerkot">
+                                                            Dheerkot</option>
+                                                                                                            <option value="Digri">
+                                                            Digri</option>
+                                                                                                            <option value="Dina">
+                                                            Dina</option>
+                                                                                                            <option value="Dinga">
+                                                            Dinga</option>
+                                                                                                            <option value="Donga Bonga">
+                                                            Donga Bonga</option>
+                                                                                                            <option value="Doronaro">
+                                                            Doronaro</option>
+                                                                                                            <option value="Dour">
+                                                            Dour</option>
+                                                                                                            <option value="Duabba">
+                                                            Duabba</option>
+                                                                                                            <option value="Dulywala">
+                                                            Dulywala</option>
+                                                                                                            <option value="Duniapur">
+                                                            Duniapur</option>
+                                                                                                            <option value="Dunya Pur">
+                                                            Dunya Pur</option>
+                                                                                                            <option value="Ellah Abbad">
+                                                            Ellah Abbad</option>
+                                                                                                            <option value="Ehsan Pur">
+                                                            Ehsan Pur</option>
+                                                                                                            <option value="Farooqabad">
+                                                            Farooqabad</option>
+                                                                                                            <option value="Fateh Pur Kamal">
+                                                            Fateh Pur Kamal</option>
+                                                                                                            <option value="Feroza">
+                                                            Feroza</option>
+                                                                                                            <option value="Faisalabad">
+                                                            Faisalabad</option>
+                                                                                                            <option value="Faqirwali">
+                                                            Faqirwali</option>
+                                                                                                            <option value="Fateh Jang">
+                                                            Fateh Jang</option>
+                                                                                                            <option value="Fatehpur">
+                                                            Fatehpur</option>
+                                                                                                            <option value="Fazal Pur">
+                                                            Fazal Pur</option>
+                                                                                                            <option value="Fazilpur">
+                                                            Fazilpur</option>
+                                                                                                            <option value="Feroze Wattwan">
+                                                            Feroze Wattwan</option>
+                                                                                                            <option value="Fort Abbass">
+                                                            Fort Abbass</option>
+                                                                                                            <option value="Fort Monroe">
+                                                            Fort Monroe</option>
+                                                                                                            <option value="Gari Yasin">
+                                                            Gari Yasin</option>
+                                                                                                            <option value="Ghakhar">
+                                                            Ghakhar</option>
+                                                                                                            <option value="Girot">
+                                                            Girot</option>
+                                                                                                            <option value="Golarchi">
+                                                            Golarchi</option>
+                                                                                                            <option value="Gadani">
+                                                            Gadani</option>
+                                                                                                            <option value="Gadoon Amazai">
+                                                            Gadoon Amazai</option>
+                                                                                                            <option value="Gaggo Mandi">
+                                                            Gaggo Mandi</option>
+                                                                                                            <option value="Gahri Kapoora">
+                                                            Gahri Kapoora</option>
+                                                                                                            <option value="Gakhar Mandi">
+                                                            Gakhar Mandi</option>
+                                                                                                            <option value="Gambat">
+                                                            Gambat</option>
+                                                                                                            <option value="Garh Mahraja">
+                                                            Garh Mahraja</option>
+                                                                                                            <option value="Garhi Habibullah">
+                                                            Garhi Habibullah</option>
+                                                                                                            <option value="Garhmore">
+                                                            Garhmore</option>
+                                                                                                            <option value="Gazgi">
+                                                            Gazgi</option>
+                                                                                                            <option value="Gharhi Mori">
+                                                            Gharhi Mori</option>
+                                                                                                            <option value="Ghari Duptta">
+                                                            Ghari Duptta</option>
+                                                                                                            <option value="Gharo">
+                                                            Gharo</option>
+                                                                                                            <option value="Gwadar">
+                                                            Gwadar</option>
+                                                                                                            <option value="Ghazi">
+                                                            Ghazi</option>
+                                                                                                            <option value="Ghazi Ghat">
+                                                            Ghazi Ghat</option>
+                                                                                                            <option value="Ghotki">
+                                                            Ghotki</option>
+                                                                                                            <option value="Gilgit">
+                                                            Gilgit</option>
+                                                                                                            <option value="Gojra">
+                                                            Gojra</option>
+                                                                                                            <option value="Goth Machi">
+                                                            Goth Machi</option>
+                                                                                                            <option value="Guddu">
+                                                            Guddu</option>
+                                                                                                            <option value="Gujar Khan">
+                                                            Gujar Khan</option>
+                                                                                                            <option value="Gujranwala">
+                                                            Gujranwala</option>
+                                                                                                            <option value="Gujrat">
+                                                            Gujrat</option>
+                                                                                                            <option value="Habiba Abad">
+                                                            Habiba Abad</option>
+                                                                                                            <option value="Hala">
+                                                            Hala</option>
+                                                                                                            <option value="Harnoli">
+                                                            Harnoli</option>
+                                                                                                            <option value="Head Baloki">
+                                                            Head Baloki</option>
+                                                                                                            <option value="Head Faqeerian">
+                                                            Head Faqeerian</option>
+                                                                                                            <option value="Head Muhammad Wala">
+                                                            Head Muhammad Wala</option>
+                                                                                                            <option value="Hingorja">
+                                                            Hingorja</option>
+                                                                                                            <option value="Hub Chowki">
+                                                            Hub Chowki</option>
+                                                                                                            <option value="Hafizabad ">
+                                                            Hafizabad </option>
+                                                                                                            <option value="Hajira">
+                                                            Hajira</option>
+                                                                                                            <option value="Halani">
+                                                            Halani</option>
+                                                                                                            <option value="Hangu">
+                                                            Hangu</option>
+                                                                                                            <option value="Harappa">
+                                                            Harappa</option>
+                                                                                                            <option value="Haripur">
+                                                            Haripur</option>
+                                                                                                            <option value="Haroonabad">
+                                                            Haroonabad</option>
+                                                                                                            <option value="Hasilpur">
+                                                            Hasilpur</option>
+                                                                                                            <option value="Hassan Abdal">
+                                                            Hassan Abdal</option>
+                                                                                                            <option value="Hatoongo">
+                                                            Hatoongo</option>
+                                                                                                            <option value="Hattain Bala">
+                                                            Hattain Bala</option>
+                                                                                                            <option value="Hattar">
+                                                            Hattar</option>
+                                                                                                            <option value="Hattian">
+                                                            Hattian</option>
+                                                                                                            <option value="Haveli Lakha">
+                                                            Haveli Lakha</option>
+                                                                                                            <option value="Hawilian">
+                                                            Hawilian</option>
+                                                                                                            <option value="Hazara University">
+                                                            Hazara University</option>
+                                                                                                            <option value="Hazro ">
+                                                            Hazro </option>
+                                                                                                            <option value="Head Marala">
+                                                            Head Marala</option>
+                                                                                                            <option value="Hindyari">
+                                                            Hindyari</option>
+                                                                                                            <option value="Hub">
+                                                            Hub</option>
+                                                                                                            <option value="Hujra Shah Mukeem">
+                                                            Hujra Shah Mukeem</option>
+                                                                                                            <option value="Hyderabad">
+                                                            Hyderabad</option>
+                                                                                                            <option value="Hyderabad Thal">
+                                                            Hyderabad Thal</option>
+                                                                                                            <option value="Islam Garh">
+                                                            Islam Garh</option>
+                                                                                                            <option value="Isakhel">
+                                                            Isakhel</option>
+                                                                                                            <option value="Iskandarabad">
+                                                            Iskandarabad</option>
+                                                                                                            <option value="Islamabad">
+                                                            Islamabad</option>
+                                                                                                            <option value="Islamkot">
+                                                            Islamkot</option>
+                                                                                                            <option value="Issa Khel">
+                                                            Issa Khel</option>
+                                                                                                            <option value="Jilalpur Bhatian">
+                                                            Jilalpur Bhatian</option>
+                                                                                                            <option value="Juddo">
+                                                            Juddo</option>
+                                                                                                            <option value="Jacobabad">
+                                                            Jacobabad</option>
+                                                                                                            <option value="Jahangira">
+                                                            Jahangira</option>
+                                                                                                            <option value="Jahanian">
+                                                            Jahanian</option>
+                                                                                                            <option value="Jalalpur Jattan">
+                                                            Jalalpur Jattan</option>
+                                                                                                            <option value="Jalalpur Pirwala">
+                                                            Jalalpur Pirwala</option>
+                                                                                                            <option value="Jam Sahib">
+                                                            Jam Sahib</option>
+                                                                                                            <option value="Jaman Shah">
+                                                            Jaman Shah</option>
+                                                                                                            <option value="Jammbur">
+                                                            Jammbur</option>
+                                                                                                            <option value="Jampur">
+                                                            Jampur</option>
+                                                                                                            <option value="Jamshoro">
+                                                            Jamshoro</option>
+                                                                                                            <option value="Jand">
+                                                            Jand</option>
+                                                                                                            <option value="Jaranwala">
+                                                            Jaranwala</option>
+                                                                                                            <option value="Jatlan">
+                                                            Jatlan</option>
+                                                                                                            <option value="Jatoi">
+                                                            Jatoi</option>
+                                                                                                            <option value="Jauharabad">
+                                                            Jauharabad</option>
+                                                                                                            <option value="Jhaamkay">
+                                                            Jhaamkay</option>
+                                                                                                            <option value="Jhabran">
+                                                            Jhabran</option>
+                                                                                                            <option value="Jhandala Sher Khan">
+                                                            Jhandala Sher Khan</option>
+                                                                                                            <option value="Jhang">
+                                                            Jhang</option>
+                                                                                                            <option value="Jhelum">
+                                                            Jhelum</option>
+                                                                                                            <option value="Jhok Mehar Shah">
+                                                            Jhok Mehar Shah</option>
+                                                                                                            <option value="Jhol">
+                                                            Jhol</option>
+                                                                                                            <option value="Jin Pur">
+                                                            Jin Pur</option>
+                                                                                                            <option value="Johi">
+                                                            Johi</option>
+                                                                                                            <option value="K.N. Shah">
+                                                            K.N. Shah</option>
+                                                                                                            <option value="Kacha Khho">
+                                                            Kacha Khho</option>
+                                                                                                            <option value="Kakul ">
+                                                            Kakul </option>
+                                                                                                            <option value="Kamer Mishani">
+                                                            Kamer Mishani</option>
+                                                                                                            <option value="Kangan Pur">
+                                                            Kangan Pur</option>
+                                                                                                            <option value="Karam Pur">
+                                                            Karam Pur</option>
+                                                                                                            <option value="Karoor Lalison">
+                                                            Karoor Lalison</option>
+                                                                                                            <option value="Kasso Ke">
+                                                            Kasso Ke</option>
+                                                                                                            <option value="Khair Pur Mahar ">
+                                                            Khair Pur Mahar </option>
+                                                                                                            <option value="Khairpur Tamewali">
+                                                            Khairpur Tamewali</option>
+                                                                                                            <option value="Khan Garh">
+                                                            Khan Garh</option>
+                                                                                                            <option value="Khanka Dogran">
+                                                            Khanka Dogran</option>
+                                                                                                            <option value="Khipro">
+                                                            Khipro</option>
+                                                                                                            <option value="Khuddian">
+                                                            Khuddian</option>
+                                                                                                            <option value="Kolo Tarar">
+                                                            Kolo Tarar</option>
+                                                                                                            <option value="Kot Banglow">
+                                                            Kot Banglow</option>
+                                                                                                            <option value="Kot Diji">
+                                                            Kot Diji</option>
+                                                                                                            <option value="Kot Gullam Mohd">
+                                                            Kot Gullam Mohd</option>
+                                                                                                            <option value="Kot Radha Kishan">
+                                                            Kot Radha Kishan</option>
+                                                                                                            <option value="Kot Sabzil">
+                                                            Kot Sabzil</option>
+                                                                                                            <option value="Kot Samaba">
+                                                            Kot Samaba</option>
+                                                                                                            <option value="Kot Sultan">
+                                                            Kot Sultan</option>
+                                                                                                            <option value="Kotla Jam">
+                                                            Kotla Jam</option>
+                                                                                                            <option value="Kumb">
+                                                            Kumb</option>
+                                                                                                            <option value="Kundain">
+                                                            Kundain</option>
+                                                                                                            <option value="Kunja City">
+                                                            Kunja City</option>
+                                                                                                            <option value="Kabal">
+                                                            Kabal</option>
+                                                                                                            <option value="Kabirwala">
+                                                            Kabirwala</option>
+                                                                                                            <option value="Kahori Pull">
+                                                            Kahori Pull</option>
+                                                                                                            <option value="Kahuta">
+                                                            Kahuta</option>
+                                                                                                            <option value="Kala Bagh">
+                                                            Kala Bagh</option>
+                                                                                                            <option value="Kala Shah Kaku">
+                                                            Kala Shah Kaku</option>
+                                                                                                            <option value="Kalam">
+                                                            Kalam</option>
+                                                                                                            <option value="Kaleki Mandi">
+                                                            Kaleki Mandi</option>
+                                                                                                            <option value="Kallar Kahar">
+                                                            Kallar Kahar</option>
+                                                                                                            <option value="Kallar Saddiyian">
+                                                            Kallar Saddiyian</option>
+                                                                                                            <option value="Kaloorkot">
+                                                            Kaloorkot</option>
+                                                                                                            <option value="Kamalia">
+                                                            Kamalia</option>
+                                                                                                            <option value="Kamber Ali Khan">
+                                                            Kamber Ali Khan</option>
+                                                                                                            <option value="Kamir">
+                                                            Kamir</option>
+                                                                                                            <option value="Kamoke">
+                                                            Kamoke</option>
+                                                                                                            <option value="Kamra ">
+                                                            Kamra </option>
+                                                                                                            <option value="Kandh Kot">
+                                                            Kandh Kot</option>
+                                                                                                            <option value="Kandiari">
+                                                            Kandiari</option>
+                                                                                                            <option value="Kandiaro">
+                                                            Kandiaro</option>
+                                                                                                            <option value="Kanju Township">
+                                                            Kanju Township</option>
+                                                                                                            <option value="Karachi">
+                                                            Karachi</option>
+                                                                                                            <option value="Karak">
+                                                            Karak</option>
+                                                                                                            <option value="Karchak">
+                                                            Karchak</option>
+                                                                                                            <option value="Karianwala">
+                                                            Karianwala</option>
+                                                                                                            <option value="Karachi">
+                                                            Karachi</option>
+                                                                                                            <option value="Karor Pakka">
+                                                            Karor Pakka</option>
+                                                                                                            <option value="Kashmore">
+                                                            Kashmore</option>
+                                                                                                            <option value="Kasur">
+                                                            Kasur</option>
+                                                                                                            <option value="Katlang">
+                                                            Katlang</option>
+                                                                                                            <option value="Khadro">
+                                                            Khadro</option>
+                                                                                                            <option value="Khairpur Mirs">
+                                                            Khairpur Mirs</option>
+                                                                                                            <option value="Khairpur Nathan Shah">
+                                                            Khairpur Nathan Shah</option>
+                                                                                                            <option value="Khaliq Abad">
+                                                            Khaliq Abad</option>
+                                                                                                            <option value="Khan Bela">
+                                                            Khan Bela</option>
+                                                                                                            <option value="Khand">
+                                                            Khand</option>
+                                                                                                            <option value="Khanewahan">
+                                                            Khanewahan</option>
+                                                                                                            <option value="Khanewal">
+                                                            Khanewal</option>
+                                                                                                            <option value="Khanpur">
+                                                            Khanpur</option>
+                                                                                                            <option value="Khanpur Dam">
+                                                            Khanpur Dam</option>
+                                                                                                            <option value="Khansar">
+                                                            Khansar</option>
+                                                                                                            <option value="Kharian">
+                                                            Kharian</option>
+                                                                                                            <option value="Kharzan">
+                                                            Kharzan</option>
+                                                                                                            <option value="Khawaja Stop">
+                                                            Khawaja Stop</option>
+                                                                                                            <option value="Khawaza Khela">
+                                                            Khawaza Khela</option>
+                                                                                                            <option value="Khewra">
+                                                            Khewra</option>
+                                                                                                            <option value="Khichiwala">
+                                                            Khichiwala</option>
+                                                                                                            <option value="Khoi Ratta">
+                                                            Khoi Ratta</option>
+                                                                                                            <option value="Khurrianwala">
+                                                            Khurrianwala</option>
+                                                                                                            <option value="Khushab">
+                                                            Khushab</option>
+                                                                                                            <option value="Khuzdar">
+                                                            Khuzdar</option>
+                                                                                                            <option value="Khyber ">
+                                                            Khyber </option>
+                                                                                                            <option value="Klaske">
+                                                            Klaske</option>
+                                                                                                            <option value="Kohala">
+                                                            Kohala</option>
+                                                                                                            <option value="Kohat">
+                                                            Kohat</option>
+                                                                                                            <option value="Kolachi">
+                                                            Kolachi</option>
+                                                                                                            <option value="Komi Kot">
+                                                            Komi Kot</option>
+                                                                                                            <option value="Kot Addu">
+                                                            Kot Addu</option>
+                                                                                                            <option value="Kot Chutta">
+                                                            Kot Chutta</option>
+                                                                                                            <option value="Kot Momin">
+                                                            Kot Momin</option>
+                                                                                                            <option value="Kot Qaisrani">
+                                                            Kot Qaisrani</option>
+                                                                                                            <option value="Kot Sarwar">
+                                                            Kot Sarwar</option>
+                                                                                                            <option value="Kote Jamel">
+                                                            Kote Jamel</option>
+                                                                                                            <option value="Kotla Arab Ali Khan">
+                                                            Kotla Arab Ali Khan</option>
+                                                                                                            <option value="Kotli Ak">
+                                                            Kotli Ak</option>
+                                                                                                            <option value="Kotli Loharan">
+                                                            Kotli Loharan</option>
+                                                                                                            <option value="Kotri">
+                                                            Kotri</option>
+                                                                                                            <option value="Kotri Kabir">
+                                                            Kotri Kabir</option>
+                                                                                                            <option value="Kuchlaq">
+                                                            Kuchlaq</option>
+                                                                                                            <option value="Kunri">
+                                                            Kunri</option>
+                                                                                                            <option value="Laliyan">
+                                                            Laliyan</option>
+                                                                                                            <option value="Lawa">
+                                                            Lawa</option>
+                                                                                                            <option value="Lachi">
+                                                            Lachi</option>
+                                                                                                            <option value="Ladhana">
+                                                            Ladhana</option>
+                                                                                                            <option value="Lahore">
+                                                            Lahore</option>
+                                                                                                            <option value="Lakki Marwat">
+                                                            Lakki Marwat</option>
+                                                                                                            <option value="Lakpass">
+                                                            Lakpass</option>
+                                                                                                            <option value="Lala Musa">
+                                                            Lala Musa</option>
+                                                                                                            <option value="Languar Pura">
+                                                            Languar Pura</option>
+                                                                                                            <option value="Larkana">
+                                                            Larkana</option>
+                                                                                                            <option value="Layyah">
+                                                            Layyah</option>
+                                                                                                            <option value="Liaqatpur">
+                                                            Liaqatpur</option>
+                                                                                                            <option value="Lodhran">
+                                                            Lodhran</option>
+                                                                                                            <option value="Lower Dir">
+                                                            Lower Dir</option>
+                                                                                                            <option value="Madeji ">
+                                                            Madeji </option>
+                                                                                                            <option value="Makhdoom Ali">
+                                                            Makhdoom Ali</option>
+                                                                                                            <option value="Makhdoom Rasheed">
+                                                            Makhdoom Rasheed</option>
+                                                                                                            <option value="Mamukanjin">
+                                                            Mamukanjin</option>
+                                                                                                            <option value="Mandi Faizabad">
+                                                            Mandi Faizabad</option>
+                                                                                                            <option value="Mandi Shah Jewna">
+                                                            Mandi Shah Jewna</option>
+                                                                                                            <option value="Mangwal">
+                                                            Mangwal</option>
+                                                                                                            <option value="Mari Indus">
+                                                            Mari Indus</option>
+                                                                                                            <option value="Matiari">
+                                                            Matiari</option>
+                                                                                                            <option value="Matli">
+                                                            Matli</option>
+                                                                                                            <option value="Mehmood Kot">
+                                                            Mehmood Kot</option>
+                                                                                                            <option value="Miani">
+                                                            Miani</option>
+                                                                                                            <option value="Mirpur Bathoro">
+                                                            Mirpur Bathoro</option>
+                                                                                                            <option value="Mirpur Sakro">
+                                                            Mirpur Sakro</option>
+                                                                                                            <option value="Mirwah">
+                                                            Mirwah</option>
+                                                                                                            <option value="Mithyani">
+                                                            Mithyani</option>
+                                                                                                            <option value="Mulhal Mughla">
+                                                            Mulhal Mughla</option>
+                                                                                                            <option value="Munara">
+                                                            Munara</option>
+                                                                                                            <option value="Murred Air Base">
+                                                            Murred Air Base</option>
+                                                                                                            <option value="Musafir Khana">
+                                                            Musafir Khana</option>
+                                                                                                            <option value="Maidain">
+                                                            Maidain</option>
+                                                                                                            <option value="Mailsi ">
+                                                            Mailsi </option>
+                                                                                                            <option value="Makhal">
+                                                            Makhal</option>
+                                                                                                            <option value="Makli">
+                                                            Makli</option>
+                                                                                                            <option value="Malakand">
+                                                            Malakand</option>
+                                                                                                            <option value="Malakwal ">
+                                                            Malakwal </option>
+                                                                                                            <option value="Malam Jabba">
+                                                            Malam Jabba</option>
+                                                                                                            <option value="Mandi Bahauddin">
+                                                            Mandi Bahauddin</option>
+                                                                                                            <option value="Mandra">
+                                                            Mandra</option>
+                                                                                                            <option value="Manekra">
+                                                            Manekra</option>
+                                                                                                            <option value="Manga Mandi">
+                                                            Manga Mandi</option>
+                                                                                                            <option value="Mangla">
+                                                            Mangla</option>
+                                                                                                            <option value="Mannanwala">
+                                                            Mannanwala</option>
+                                                                                                            <option value="Mansehra">
+                                                            Mansehra</option>
+                                                                                                            <option value="Maqsoodo">
+                                                            Maqsoodo</option>
+                                                                                                            <option value="Mardan">
+                                                            Mardan</option>
+                                                                                                            <option value="Marot ">
+                                                            Marot </option>
+                                                                                                            <option value="Mastung">
+                                                            Mastung</option>
+                                                                                                            <option value="Matiari ">
+                                                            Matiari </option>
+                                                                                                            <option value="Matta">
+                                                            Matta</option>
+                                                                                                            <option value="Mcleodganj">
+                                                            Mcleodganj</option>
+                                                                                                            <option value="Mehar">
+                                                            Mehar</option>
+                                                                                                            <option value="Mehrabpur">
+                                                            Mehrabpur</option>
+                                                                                                            <option value="Mian Channu">
+                                                            Mian Channu</option>
+                                                                                                            <option value="Mian Wali">
+                                                            Mian Wali</option>
+                                                                                                            <option value="Minchinabad">
+                                                            Minchinabad</option>
+                                                                                                            <option value="Mingora">
+                                                            Mingora</option>
+                                                                                                            <option value="Mirpur Azad Kashmir">
+                                                            Mirpur Azad Kashmir</option>
+                                                                                                            <option value="Mirpur Khas">
+                                                            Mirpur Khas</option>
+                                                                                                            <option value="Mirpur Mathelo">
+                                                            Mirpur Mathelo</option>
+                                                                                                            <option value="Mithankot ">
+                                                            Mithankot </option>
+                                                                                                            <option value="Mithi">
+                                                            Mithi</option>
+                                                                                                            <option value="Moola">
+                                                            Moola</option>
+                                                                                                            <option value="More Aimanabad">
+                                                            More Aimanabad</option>
+                                                                                                            <option value="More Khunda">
+                                                            More Khunda</option>
+                                                                                                            <option value="Moro">
+                                                            Moro</option>
+                                                                                                            <option value="Muhammadpur">
+                                                            Muhammadpur</option>
+                                                                                                            <option value="Multan">
+                                                            Multan</option>
+                                                                                                            <option value="Muridke">
+                                                            Muridke</option>
+                                                                                                            <option value="Murree">
+                                                            Murree</option>
+                                                                                                            <option value="Muzaffarabad">
+                                                            Muzaffarabad</option>
+                                                                                                            <option value="Muzaffargarh ">
+                                                            Muzaffargarh </option>
+                                                                                                            <option value="Nandi Pur">
+                                                            Nandi Pur</option>
+                                                                                                            <option value="Narang Mandi">
+                                                            Narang Mandi</option>
+                                                                                                            <option value="Naukot">
+                                                            Naukot</option>
+                                                                                                            <option value="Neela Dhulla">
+                                                            Neela Dhulla</option>
+                                                                                                            <option value="New Jatoi">
+                                                            New Jatoi</option>
+                                                                                                            <option value="Noorpur Nooranga">
+                                                            Noorpur Nooranga</option>
+                                                                                                            <option value="Nakayal">
+                                                            Nakayal</option>
+                                                                                                            <option value="Nankana Shahib">
+                                                            Nankana Shahib</option>
+                                                                                                            <option value="Narowal">
+                                                            Narowal</option>
+                                                                                                            <option value="Naudero">
+                                                            Naudero</option>
+                                                                                                            <option value="Nawab Shah">
+                                                            Nawab Shah</option>
+                                                                                                            <option value="Nawakalai">
+                                                            Nawakalai</option>
+                                                                                                            <option value="New Saeedabad">
+                                                            New Saeedabad</option>
+                                                                                                            <option value="Nizampur">
+                                                            Nizampur</option>
+                                                                                                            <option value="Nooriabad">
+                                                            Nooriabad</option>
+                                                                                                            <option value="Noshero Feroze">
+                                                            Noshero Feroze</option>
+                                                                                                            <option value="Notak">
+                                                            Notak</option>
+                                                                                                            <option value="Nowshera">
+                                                            Nowshera</option>
+                                                                                                            <option value="Nowshera Virka">
+                                                            Nowshera Virka</option>
+                                                                                                            <option value="Oudherwal">
+                                                            Oudherwal</option>
+                                                                                                            <option value="Odigram">
+                                                            Odigram</option>
+                                                                                                            <option value="Oghi">
+                                                            Oghi</option>
+                                                                                                            <option value="Okara">
+                                                            Okara</option>
+                                                                                                            <option value="Other">
+                                                            Other</option>
+                                                                                                            <option value="Painsara">
+                                                            Painsara</option>
+                                                                                                            <option value="Paniyal">
+                                                            Paniyal</option>
+                                                                                                            <option value="Phularwan">
+                                                            Phularwan</option>
+                                                                                                            <option value="Phull">
+                                                            Phull</option>
+                                                                                                            <option value="Pir-Jo-Goth">
+                                                            Pir-Jo-Goth</option>
+                                                                                                            <option value="Pabbi">
+                                                            Pabbi</option>
+                                                                                                            <option value="Pacca Chang">
+                                                            Pacca Chang</option>
+                                                                                                            <option value="Padidan">
+                                                            Padidan</option>
+                                                                                                            <option value="Paharpur">
+                                                            Paharpur</option>
+                                                                                                            <option value="Paigham ">
+                                                            Paigham </option>
+                                                                                                            <option value="Pak Pattan Sharif">
+                                                            Pak Pattan Sharif</option>
+                                                                                                            <option value="Pallandri">
+                                                            Pallandri</option>
+                                                                                                            <option value="Panj Garian">
+                                                            Panj Garian</option>
+                                                                                                            <option value="Panjara">
+                                                            Panjara</option>
+                                                                                                            <option value="Panno Aqil">
+                                                            Panno Aqil</option>
+                                                                                                            <option value="Parko">
+                                                            Parko</option>
+                                                                                                            <option value="Paroa">
+                                                            Paroa</option>
+                                                                                                            <option value="Pasrur">
+                                                            Pasrur</option>
+                                                                                                            <option value="Pattika">
+                                                            Pattika</option>
+                                                                                                            <option value="Pattoki">
+                                                            Pattoki</option>
+                                                                                                            <option value="Peshawar">
+                                                            Peshawar</option>
+                                                                                                            <option value="Pezo">
+                                                            Pezo</option>
+                                                                                                            <option value="Phalia">
+                                                            Phalia</option>
+                                                                                                            <option value="Phulji Station">
+                                                            Phulji Station</option>
+                                                                                                            <option value="Pind Dadan Khan">
+                                                            Pind Dadan Khan</option>
+                                                                                                            <option value="Pindi Bhattian">
+                                                            Pindi Bhattian</option>
+                                                                                                            <option value="Pindi Gheb">
+                                                            Pindi Gheb</option>
+                                                                                                            <option value="Piplan">
+                                                            Piplan</option>
+                                                                                                            <option value="Pir Mahal">
+                                                            Pir Mahal</option>
+                                                                                                            <option value="Piryalo">
+                                                            Piryalo</option>
+                                                                                                            <option value="Ponch">
+                                                            Ponch</option>
+                                                                                                            <option value="Poona">
+                                                            Poona</option>
+                                                                                                            <option value="Puran">
+                                                            Puran</option>
+                                                                                                            <option value="Qadirpur Rawan">
+                                                            Qadirpur Rawan</option>
+                                                                                                            <option value="Qalanderabad">
+                                                            Qalanderabad</option>
+                                                                                                            <option value="Qaboola">
+                                                            Qaboola</option>
+                                                                                                            <option value="Qalla Didar Singh">
+                                                            Qalla Didar Singh</option>
+                                                                                                            <option value="Qambar">
+                                                            Qambar</option>
+                                                                                                            <option value="Qasba Gujrat">
+                                                            Qasba Gujrat</option>
+                                                                                                            <option value="Qazi Ahmed">
+                                                            Qazi Ahmed</option>
+                                                                                                            <option value="Quaid Abad">
+                                                            Quaid Abad</option>
+                                                                                                            <option value="Quetta">
+                                                            Quetta</option>
+                                                                                                            <option value="Rajana">
+                                                            Rajana</option>
+                                                                                                            <option value="Rasool Pur Tarar">
+                                                            Rasool Pur Tarar</option>
+                                                                                                            <option value="Rabwah">
+                                                            Rabwah</option>
+                                                                                                            <option value="Rahim Yar Khan">
+                                                            Rahim Yar Khan</option>
+                                                                                                            <option value="Rahwali">
+                                                            Rahwali</option>
+                                                                                                            <option value="Raiwind">
+                                                            Raiwind</option>
+                                                                                                            <option value="Rajanpur">
+                                                            Rajanpur</option>
+                                                                                                            <option value="Rangpur">
+                                                            Rangpur</option>
+                                                                                                            <option value="Ranipur">
+                                                            Ranipur</option>
+                                                                                                            <option value="Rashakae">
+                                                            Rashakae</option>
+                                                                                                            <option value="Rasoolabad">
+                                                            Rasoolabad</option>
+                                                                                                            <option value="Rato Dero">
+                                                            Rato Dero</option>
+                                                                                                            <option value="Rawalakot">
+                                                            Rawalakot</option>
+                                                                                                            <option value="Rawalpindi">
+                                                            Rawalpindi</option>
+                                                                                                            <option value="Rawat">
+                                                            Rawat</option>
+                                                                                                            <option value="Renala Khurd">
+                                                            Renala Khurd</option>
+                                                                                                            <option value="Risalpur">
+                                                            Risalpur</option>
+                                                                                                            <option value="Rohri">
+                                                            Rohri</option>
+                                                                                                            <option value="Rojhan">
+                                                            Rojhan</option>
+                                                                                                            <option value="Rukni">
+                                                            Rukni</option>
+                                                                                                            <option value="Rustam">
+                                                            Rustam</option>
+                                                                                                            <option value="Safdra Abad">
+                                                            Safdra Abad</option>
+                                                                                                            <option value="Sajarpur">
+                                                            Sajarpur</option>
+                                                                                                            <option value="Saleem Pura Jhalan">
+                                                            Saleem Pura Jhalan</option>
+                                                                                                            <option value="Saleh Pat">
+                                                            Saleh Pat</option>
+                                                                                                            <option value="Samaro">
+                                                            Samaro</option>
+                                                                                                            <option value="Samasatta">
+                                                            Samasatta</option>
+                                                                                                            <option value="Sanawaan">
+                                                            Sanawaan</option>
+                                                                                                            <option value="Sekhat">
+                                                            Sekhat</option>
+                                                                                                            <option value="Setharja ">
+                                                            Setharja </option>
+                                                                                                            <option value="Shabqadar">
+                                                            Shabqadar</option>
+                                                                                                            <option value="Shahdadkot">
+                                                            Shahdadkot</option>
+                                                                                                            <option value="Sukhiky Mandi">
+                                                            Sukhiky Mandi</option>
+                                                                                                            <option value="Sadhokee">
+                                                            Sadhokee</option>
+                                                                                                            <option value="Sadiqabad">
+                                                            Sadiqabad</option>
+                                                                                                            <option value="Sahiwal">
+                                                            Sahiwal</option>
+                                                                                                            <option value="Saidu Sharif">
+                                                            Saidu Sharif</option>
+                                                                                                            <option value="Sakardu">
+                                                            Sakardu</option>
+                                                                                                            <option value="Sakhakot">
+                                                            Sakhakot</option>
+                                                                                                            <option value="Sakhi Sarwar">
+                                                            Sakhi Sarwar</option>
+                                                                                                            <option value="Sakrand">
+                                                            Sakrand</option>
+                                                                                                            <option value="Sikandarabad">
+                                                            Sikandarabad</option>
+                                                                                                            <option value="Samahani">
+                                                            Samahani</option>
+                                                                                                            <option value="Sambrial">
+                                                            Sambrial</option>
+                                                                                                            <option value="Samundri">
+                                                            Samundri</option>
+                                                                                                            <option value="Samundri(SML)">
+                                                            Samundri(SML)</option>
+                                                                                                            <option value="Sandhoti">
+                                                            Sandhoti</option>
+                                                                                                            <option value="Sanghar">
+                                                            Sanghar</option>
+                                                                                                            <option value="Sangla Hills">
+                                                            Sangla Hills</option>
+                                                                                                            <option value="Sanjarpur">
+                                                            Sanjarpur</option>
+                                                                                                            <option value="Sara-A Mahajar">
+                                                            Sara-A Mahajar</option>
+                                                                                                            <option value="Sara-A-Naurang">
+                                                            Sara-A-Naurang</option>
+                                                                                                            <option value="Sara-E-Alamgir">
+                                                            Sara-E-Alamgir</option>
+                                                                                                            <option value="Sargodha">
+                                                            Sargodha</option>
+                                                                                                            <option value="Sasol">
+                                                            Sasol</option>
+                                                                                                            <option value="Satiayana ">
+                                                            Satiayana </option>
+                                                                                                            <option value="Sawari">
+                                                            Sawari</option>
+                                                                                                            <option value="Sehansa">
+                                                            Sehansa</option>
+                                                                                                            <option value="Sehwan Sharif">
+                                                            Sehwan Sharif</option>
+                                                                                                            <option value="Shahjamal">
+                                                            Shahjamal</option>
+                                                                                                            <option value="Shahbaz Khel">
+                                                            Shahbaz Khel</option>
+                                                                                                            <option value="Shahdara">
+                                                            Shahdara</option>
+                                                                                                            <option value="Shahkot">
+                                                            Shahkot</option>
+                                                                                                            <option value="Shahpur Chakar">
+                                                            Shahpur Chakar</option>
+                                                                                                            <option value="Shahpur Jahania">
+                                                            Shahpur Jahania</option>
+                                                                                                            <option value="Shahpur Saddar">
+                                                            Shahpur Saddar</option>
+                                                                                                            <option value="Shakargarh">
+                                                            Shakargarh</option>
+                                                                                                            <option value="Shamki Bhattian">
+                                                            Shamki Bhattian</option>
+                                                                                                            <option value="Shamozai">
+                                                            Shamozai</option>
+                                                                                                            <option value="Shehdadpur">
+                                                            Shehdadpur</option>
+                                                                                                            <option value="Sheikh Maltoon">
+                                                            Sheikh Maltoon</option>
+                                                                                                            <option value="Sheikhupura">
+                                                            Sheikhupura</option>
+                                                                                                            <option value="Sher Garh">
+                                                            Sher Garh</option>
+                                                                                                            <option value="Shersultan">
+                                                            Shersultan</option>
+                                                                                                            <option value="Shikarpur">
+                                                            Shikarpur</option>
+                                                                                                            <option value="Shinkayare">
+                                                            Shinkayare</option>
+                                                                                                            <option value="Shirangal">
+                                                            Shirangal</option>
+                                                                                                            <option value="Shorkot">
+                                                            Shorkot</option>
+                                                                                                            <option value="Shorkot Cantonment">
+                                                            Shorkot Cantonment</option>
+                                                                                                            <option value="Shuja Abad">
+                                                            Shuja Abad</option>
+                                                                                                            <option value="Sialkot">
+                                                            Sialkot</option>
+                                                                                                            <option value="Sibi">
+                                                            Sibi</option>
+                                                                                                            <option value="Sillanwali">
+                                                            Sillanwali</option>
+                                                                                                            <option value="Sindhri">
+                                                            Sindhri</option>
+                                                                                                            <option value="Sinjhoro">
+                                                            Sinjhoro</option>
+                                                                                                            <option value="Sobhodero">
+                                                            Sobhodero</option>
+                                                                                                            <option value="Sohawa">
+                                                            Sohawa</option>
+                                                                                                            <option value="Sui Gas">
+                                                            Sui Gas</option>
+                                                                                                            <option value="Sujawal">
+                                                            Sujawal</option>
+                                                                                                            <option value="Sukkur">
+                                                            Sukkur</option>
+                                                                                                            <option value="Sun Chakra">
+                                                            Sun Chakra</option>
+                                                                                                            <option value="Sundar">
+                                                            Sundar</option>
+                                                                                                            <option value="Suraab">
+                                                            Suraab</option>
+                                                                                                            <option value="Swabi">
+                                                            Swabi</option>
+                                                                                                            <option value="Swat">
+                                                            Swat</option>
+                                                                                                            <option value="Talhar">
+                                                            Talhar</option>
+                                                                                                            <option value="Tanda">
+                                                            Tanda</option>
+                                                                                                            <option value="Tando Bago">
+                                                            Tando Bago</option>
+                                                                                                            <option value="Tando Jaan Muhammad">
+                                                            Tando Jaan Muhammad</option>
+                                                                                                            <option value="Tulamba">
+                                                            Tulamba</option>
+                                                                                                            <option value="Takht-I-Bahi">
+                                                            Takht-I-Bahi</option>
+                                                                                                            <option value="Talagang">
+                                                            Talagang</option>
+                                                                                                            <option value="Tall">
+                                                            Tall</option>
+                                                                                                            <option value="Tandlianwala">
+                                                            Tandlianwala</option>
+                                                                                                            <option value="Tando Adam">
+                                                            Tando Adam</option>
+                                                                                                            <option value="Tando Allah Yar">
+                                                            Tando Allah Yar</option>
+                                                                                                            <option value="Tando Jam">
+                                                            Tando Jam</option>
+                                                                                                            <option value="Tando Muhammad Khan">
+                                                            Tando Muhammad Khan</option>
+                                                                                                            <option value="Tank">
+                                                            Tank</option>
+                                                                                                            <option value="Tarar Khal">
+                                                            Tarar Khal</option>
+                                                                                                            <option value="Tarbela">
+                                                            Tarbela</option>
+                                                                                                            <option value="Tatlay Wali ">
+                                                            Tatlay Wali </option>
+                                                                                                            <option value="Tatta Pani">
+                                                            Tatta Pani</option>
+                                                                                                            <option value="Taunsa Sharif">
+                                                            Taunsa Sharif</option>
+                                                                                                            <option value="Taxila">
+                                                            Taxila</option>
+                                                                                                            <option value="Tha Kot">
+                                                            Tha Kot</option>
+                                                                                                            <option value="Thana">
+                                                            Thana</option>
+                                                                                                            <option value="Thari Mirwah">
+                                                            Thari Mirwah</option>
+                                                                                                            <option value="Tharoshah">
+                                                            Tharoshah</option>
+                                                                                                            <option value="Thatta">
+                                                            Thatta</option>
+                                                                                                            <option value="Thheri">
+                                                            Thheri</option>
+                                                                                                            <option value="Tibba Sultanpur">
+                                                            Tibba Sultanpur</option>
+                                                                                                            <option value="Tibbi Qaisrani">
+                                                            Tibbi Qaisrani</option>
+                                                                                                            <option value="Timergara">
+                                                            Timergara</option>
+                                                                                                            <option value="Toba Tek Singh">
+                                                            Toba Tek Singh</option>
+                                                                                                            <option value="Tootak">
+                                                            Tootak</option>
+                                                                                                            <option value="Topi">
+                                                            Topi</option>
+                                                                                                            <option value="Tour Dair">
+                                                            Tour Dair</option>
+                                                                                                            <option value="Tranda Muhammad Panah">
+                                                            Tranda Muhammad Panah</option>
+                                                                                                            <option value="Ubauro ">
+                                                            Ubauro </option>
+                                                                                                            <option value="Uch Sharif">
+                                                            Uch Sharif</option>
+                                                                                                            <option value="Uggi">
+                                                            Uggi</option>
+                                                                                                            <option value="Ugoke">
+                                                            Ugoke</option>
+                                                                                                            <option value="Umar Zai">
+                                                            Umar Zai</option>
+                                                                                                            <option value="Umer Kot">
+                                                            Umer Kot</option>
+                                                                                                            <option value="Upper Dir">
+                                                            Upper Dir</option>
+                                                                                                            <option value="Usta Muhammad">
+                                                            Usta Muhammad</option>
+                                                                                                            <option value="Vehari">
+                                                            Vehari</option>
+                                                                                                            <option value="Wagan">
+                                                            Wagan</option>
+                                                                                                            <option value="Wah Cantonment">
+                                                            Wah Cantonment</option>
+                                                                                                            <option value="Wah Cantt">
+                                                            Wah Cantt</option>
+                                                                                                            <option value="Wan Bhachran">
+                                                            Wan Bhachran</option>
+                                                                                                            <option value="Wanike Tarar">
+                                                            Wanike Tarar</option>
+                                                                                                            <option value="Wapda Colony - Muzaffarabad">
+                                                            Wapda Colony - Muzaffarabad</option>
+                                                                                                            <option value="Warbatun">
+                                                            Warbatun</option>
+                                                                                                            <option value="Wazirabad">
+                                                            Wazirabad</option>
+                                                                                                            <option value="Yazman">
+                                                            Yazman</option>
+                                                                                                            <option value="Zafarwal">
+                                                            Zafarwal</option>
+                                                                                                            <option value="Zahir Pir">
+                                                            Zahir Pir</option>
+                                                                                                            <option value="Zeedi">
+                                                            Zeedi</option>
+                                                                                                            <option value="Zerina Khattan">
+                                                            Zerina Khattan</option>
+                                                                                                            <option value="Ziarat">
+                                                            Ziarat</option>
+                                                                                                            <option value="Shangla">
+                                                            Shangla</option>
+                                                                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 col-form-label">
+                                            <label for="">Email </label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="email" class="form-control" name="email" id="policyholder-email" placeholder="Enter Email">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+
+                   
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Write Comment</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 col-form-label">
+                                            <label for="">Comments </label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <textarea name="comment" class="form-control" id="agentform_cmt" rows="3" context="CREATE_POLICY" placeholder="Comments . . "></textarea>
+                                            <input type="hidden" name="cmt_context" id="policy_context" value="fCREATE_POLICY">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<p onclick="Sumbit()">Sumbit </p>
+					<button onclick="Cancel()">Cancel</button>
+						</form>	
+                </div>
+<span class="spinner-border text-success ml-1" role="status" style="display: none" id="loading_policy"></span>
+				 <p id='demo'></p>
+					
+					<script>
+					
+										
+										
+										function Cancel() {
+										  alert("Are You Sure To cancel!");
+										//document.location="index.html"
+								}
+								
+										function Sumbit() {
+										alert("Are You Sure To Sumbit!");
+										
+										
+										
+										
+										var name = document.getElementById("policyholder-name").value;
+										sessionStorage.setItem("name", name);
+											
+										var phone = document.getElementById("policyholder-phone").value;
+										sessionStorage.setItem("phone", phone);
+										
+										
+										var cnic = document.getElementById("policyholder-cnic").value;
+										sessionStorage.setItem("cnic", cnic);
+										
+										var dateofbirth =document.getElementById("ph_dateofbirth").value;
+										sessionStorage.setItem("dateofbirth",dateofbirth);
+										
+										var age =document.getElementById("ph_age").value;
+										sessionStorage.setItem("age",age);
+										
+										
+										var gender =document.getElementById("gender").value;
+										sessionStorage.setItem("gender",gender);
+										
+										var language =document.getElementById("language").value;
+										sessionStorage.setItem("language",language);
+										
+										document.location="sumbit_form_page.html";
+										
+										
+								}
+								
+										
+             	</script> 
+
+						
+				
+			</body>
+			
+			</html>
+    	
+					
+								
+				
+        
+        
